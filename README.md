@@ -1,54 +1,70 @@
-# ![GA Logo](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Star Wars API - React AJAX practice
+# Getting Started with Create React App
 
-<img src="https://i.imgur.com/go18uJE.jpg">
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
----
+## Available Scripts
 
-## Intro
+In the project directory, you can run:
 
-In this deliverable, you'll consume the [Star Wars API](https://swapi.dev/) and render it's data.
+### `npm start`
 
-## Set Up
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-To get set up:
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-- Fork and clone this repo
-- Use `create-react-app .` to create a React app inside the current directory
-- Open VS Code.
-- Open a terminal in VS Code.
-- Start the React Dev Server.
+### `npm test`
 
-## Exercises
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-> Styling is secondary to completing the functionality
+### `npm run build`
 
-1. You should begin by familiarizing yourself with the API in postman. Hit the starships endpoint and explore the data that you get back.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-2. In your `<App>` render a `<Starships>` component that obtains all of the starships from the SWAPI.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-3. Your `<Starships>` component should map the data retrived from the SWAPI into to `<Starship>` components that get rendered. Include at least the **name** and **class** of the starship and any other data you think is interesting to show th user in the `<Starship>` component.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Hints
+### `npm run eject`
 
-- Hold the starships in state.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-- You API call will need to go in a `useEffect` hook.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Bonus
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-- you may notice that not many starships come back from the API's starship endpoint -- if you explore the data in postman you will find urls with query strings to get more pages of startships. Can you think of a way to integrate this into your app and show the user all of the starships?
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-- Enhance the `<Starship>` component list the names of the pilots for that starship by mapping the data to a `<Pilot>` component.
-  - If the starship has no pilots, display a "No Pilots" message.
+## Learn More
 
-**HINT:** research mapping an array of pending promises and awaiting for them all with `Promise.all()`. This is much easier this `async/await`. But be careful! you will want to use `async/await` along with `useEffect` [correctly](https://harrisonstandeffer.com/async-await-in-react-use-effect-hooks/) in React!
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-- Style your App! There are [so many ways to style in react](https://codeburst.io/4-four-ways-to-style-react-components-ac6f323da822). Have some Fun!
+To learn React, check out the [React documentation](https://reactjs.org/).
 
----
+### Code Splitting
 
-Adapted from [react-ajax-swapi](https://github.com/WDI-SEA/react-ajax-swapi) to not use the react-router-dom
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-## Licensing
-1. All content is licensed under a CC-BY-NC-SA 4.0 license.
-2. All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
