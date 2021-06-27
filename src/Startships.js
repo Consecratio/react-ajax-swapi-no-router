@@ -12,7 +12,6 @@ const Starships = () => {
                 .then(res => {
                     setStarships(starships.concat(res.data.results))
                     setApiUrl(res.data.next)
-                    console.log(res.data.results)
                 })
                 .catch(err => {
                     console.log(err)
