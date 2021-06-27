@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import Pilots from './Pilots'
 
 const Starships = () => {
     const [starships, setStarships] = useState([])
@@ -24,6 +25,7 @@ const Starships = () => {
             <div key={index}>
                 <p>Name: {ship.name}</p>
                 <p>Class: {ship.starship_class}</p>
+                <Pilots pilotData={ship.pilots} />
             </div>
         )
     })
