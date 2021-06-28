@@ -4,7 +4,7 @@ import Starships from './Startships'
 
 const App = () => {
   return (
-    <div>
+    <div className="container">
       <Starships />
     </div>
   );

@@ -30,8 +30,8 @@ const Pilots = (props) => {
     }
 
     return (
-        <div>
-            <h4>Pilots:</h4>
+        <div className="card-text">
+            <strong>Pilots:</strong>
             <ul>
                 {nameDisplay}
             </ul>

@@ -21,16 +21,18 @@ const Starships = () => {
 
     const shipNames = starships.map((ship, index) => {
         return (
-            <div key={index}>
-                <p>Name: {ship.name}</p>
-                <p>Class: {ship.starship_class}</p>
-                <Pilots pilotData={ship.pilots} />
+            <div className="card ml-2 mb-2" key={index}>
+                <h5 className="card-header"><strong>{ship.name}</strong></h5>
+                <div className="card-body">
+                    <h6 className="card-title"><strong>Class:</strong> {ship.starship_class}</h6>
+                    <Pilots pilotData={ship.pilots} />
+                </div>
             </div>
         )
     })
  
     return(
-        <div>
+        <div className="row">
             {shipNames}
         </div>
     )
